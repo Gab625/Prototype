@@ -44,6 +44,23 @@ const contrato3 = new Document(
   "Todos os Direitos Reservados"
 );
 
+const contrato4 = new Document(
+  "Contrato D",
+  "Conteudo ...",
+  "Empresa BFD",
+  "Outros1",
+  "Todos os Direitos Reservados"
+);
+
+const contrato5 = new Document(
+  "Contrato E",
+  "Conteudo ...",
+  "Empresa BFD",
+  "Outros2",
+  "Todos os Direitos Reservados"
+);
 console.log(contrato1);
 console.log(contrato2);
 console.log(contrato3);
+console.log(contrato4);
+console.log(contrato5);
