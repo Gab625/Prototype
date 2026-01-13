@@ -7,7 +7,7 @@ class RentalContract extends Contract {
     empresa: string,
     contratante: string,
     rodape: string,
-    public rentValue: number
+    public valorRenda: number
   ) {
     super(titulo, conteudo, empresa, contratante, rodape);
   }
@@ -19,7 +19,7 @@ class RentalContract extends Contract {
       this.empresa,
       this.contratante,
       this.rodape,
-      this.rentValue
+      this.valorRenda
     );
   }
 }
@@ -34,6 +34,6 @@ const modeloAluguel = new RentalContract(
 );
 
 const contratoAluguel1 = modeloAluguel.clone();
-contratoAluguel1.rentValue = 2500;
+contratoAluguel1.valorRenda = 2500;
 
 console.log(contratoAluguel1);

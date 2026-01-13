@@ -35,14 +35,20 @@ export class Contract implements Prototype<Contract> {
 }
 
 const contratoBase = new Contract(
-  "Contrato X",
+  "Exemplo de contrato",
   "Conteudo Padrão",
   "Grupo BFD",
-  "IFPA",
+  "Exemplo de empresa",
   "Todos os direitos reservados ©"
 );
 
-const contractA = contratoBase.clone();
-contractA.titulo = "Contract A";
+const contratoA = contratoBase.clone();
+contratoA.titulo = "Contrato A";
+contratoA.contratante = "IFPA";
 
-console.log(contractA);
+const contratoB = contratoBase.clone();
+contratoB.titulo = "Contrato B";
+contratoB.contratante = "UEPA";
+
+console.log(contratoA);
+console.log(contratoB);
